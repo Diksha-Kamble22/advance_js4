@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+  <body onkeypress="keyPress()"
+
+onresize="resizeHeightFunction()" onscroll="windowScroll()" style ="background-color: plum; font-family: cursive">
+
+<button onclick="singleClick()" style="background-color:#bd27db"> change BC</button>
+<p onmousedown="doubleClick()"> mouse down </p>
+<p oncontextmenu="rightClick()"> Right Click </p>
+<p onmouseenter="mouseHover()"> Mouse Hover </p>
+<p onload="keyPress()">Keypress</p>
+
+<button onclick="openWindow()" style ="color :#30cfc4 ">Open Window</button>
+  <!-- Project -->
+ <button onclick="openWindow.close" style ="background-color: #ccdb27 ">Not interested X</button>
+ <br><br>
+   
+  <button onclick ="moveWindow ()" style =" background-color: hotpink"> Move Window </button><br>
+  <br>
+  <a href = "https://www.w3schools.com/js/js_window.asp","width=100px , height =100px", target = "newWindow"> Get More Info</a>
+  
+  <script type ='text/javascript'>
+    
+    function openWindow() {
+      document.body.style.backgroundColor="#db6b2a";
+    }
+    
+    function singleClick(){
+      document.body.style.backgroundColor = "orange";
+    }
+    function moveWindow(){
+      document.body.style.backgroundColor ="#42eff5";
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
